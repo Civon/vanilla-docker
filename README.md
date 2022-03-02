@@ -1,3 +1,14 @@
+# Setup
+### Symlink the config to vanilla repo
+```
+cd ~/vnla/vanilla/conf
+ln -s ../../vanilla-docker/bootstrap.before.php
+ln -s ../../vanilla-docker/bootstrap.early.php     
+```
+### create .env.development & source it   
+
+---
+# Vanilla team documentation
 ## Vanilla Docker environment
 
 *Only supports Mac OSX at the moment but everything can be easily adapted to work on other platforms.*
