@@ -34,3 +34,5 @@ _notes
 !/resources/usr/local/etc/php/conf.d/.gitkeep
 /resources/usr/local/etc/php/fpm/pool.d/
 !/resources/usr/local/etc/php/fpm/pool.d/www.conf
+.vscode/
+.env.development
