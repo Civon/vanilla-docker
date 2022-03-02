@@ -91,6 +91,17 @@ services:
         build:
             context: "./images/php-fpm"
         container_name: "php-fpm"
+        environment:
+            - "DEBUG=${DEBUG}"
+            - "HOTRELOAD=${HOTRELOAD}"
+            - "DB_HOSTNAME=${DB_HOSTNAME}"
+            - "DB_DATABASE=${DB_DATABASE}"
+            - "DB_USERNAME=${DB_USERNAME}"
+            - "DB_PASSWORD=${DB_PASSWORD}"
+            - "EMAIL_ADDRESS=${EMAIL_ADDRESS}"
+            - "SMTP_HOST=${SMTP_HOST}"
+            - "SMTP_USER=${SMTP_USER}"
+            - "PASSWORD_TOKEN=${PASSWORD_TOKEN}"
         depends_on:
             - "database"
         networks: &php-networks
